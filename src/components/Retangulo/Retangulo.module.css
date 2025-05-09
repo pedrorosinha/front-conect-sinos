@@ -1,0 +1,55 @@
+/* Estilos comuns para todos os retângulos */
+.retangulo {
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o padding */
+  width: 100%; /* Garantir que ocupa toda a largura */
+  box-sizing: border-box; /* Não afeta o tamanho total */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilos para diferentes tipos de Retângulos */
+.tipo1 {
+  background-color: #003366;
+  height: 150px; /* Defina a altura conforme necessário */
+}
+
+.tipo2 {
+  background: #d9d9d9;
+  height: 41px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center; /* Garante alinhamento vertical centralizado */
+  justify-content: flex-end; /* Joga o conteúdo para a direita */
+}
+
+.tipo3 {
+  background-color: #007bff;
+  height: 182px; /* Defina a altura conforme necessário */
+  width: 977px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tipo4 {
+  width: 157px;
+  height: 41px;
+  background-color: #ffffff8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; /* Mantém ele grudado na direita */
+  margin-bottom: 0; /* Remove qualquer margem inferior extra */
+  flex-shrink: 0; /* Impede que ele seja comprimido */
+}
+
+.tipo5 {
+  width: 850px;
+  height: 95px;
+  background: #2c70f4;
+  margin-bottom: 30px;
+}
