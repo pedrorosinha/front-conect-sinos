@@ -71,7 +71,7 @@ img {
   background-image: url("/assets/estudantes.jpg");
   background-size: cover; /* Faz a imagem cobrir todo o container */
   background-position: center; /* Centraliza a imagem dentro do container */
-  background-repeat: no-repeat; /* Não repete a imagem */
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -90,8 +90,10 @@ img {
 }
 
 .linkBlack {
-  color: black; /* Deixa o texto preto */
-  font-family: "Karla", sans-serif; /* Fonte desejada */
-  font-weight: 400; /* Altere para o peso desejado */
-  size: 12px;
+  color: black;
+  font-family: "Karla", sans-serif;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
