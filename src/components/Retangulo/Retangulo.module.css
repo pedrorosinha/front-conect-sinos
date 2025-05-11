@@ -53,3 +53,16 @@
   background: #2c70f4;
   margin-bottom: 30px;
 }
+
+.tipo85 {
+  width: 597px;
+  height: 441px;
+  top: 382px;
+  left: 421px;
+  border-radius: 20px;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px; /* Espaço entre o topo e o texto */
+}
