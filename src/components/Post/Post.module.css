@@ -1,0 +1,48 @@
+/* src/components/Post/Post.module.css */
+.postContainer {
+  display: flex;
+  background-color: #d9d9d9;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  max-width: 898px;
+  max-height: 393px;
+}
+.postImage {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 8px; /* Novo espaço abaixo da imagem */
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.autor {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.conteudo {
+  background-color: #d9d9d9;
+  color: #000000;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.postsSection {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,81 @@
+.uploadLabel {
+  background-color: rgb(199, 186, 186);
+  border-radius: 20px;
+}
+.textOnlyPost {
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.textOnlyBtn {
+  background-color: #28a745; /* verde */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.postOptionsContainer {
+  position: relative;
+  margin: 16px;
+}
+
+/* Botão principal */
+.mainPostButton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Popup suspenso */
+.optionsPopup {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  z-index: 10;
+  max-width: 20px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Estilo dos itens do popup */
+.optionButton {
+  display: block;
+  width: 100%;
+  padding: 6px 12px; /* Menos espaço interno */
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 13px; /* Fonte menor */
+  color: #333;
+  cursor: pointer;
+  line-height: 1.2; /* Altura da linha mais justa */
+}
+
+.optionButton:hover {
+  background-color: #f5f5f5;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
