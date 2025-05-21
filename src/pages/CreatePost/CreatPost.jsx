@@ -22,7 +22,7 @@ const CreatePost = () => {
 
     const newPost = {
       autor: "Você",
-      conteudo: descricao || "Post sem descrição",
+      conteudo: descricao || "",
       imagens: isTextOnly ? [] : images,
     };
 
