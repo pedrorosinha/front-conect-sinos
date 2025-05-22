@@ -17,7 +17,8 @@
   align-items: center; /*Vertical alignment*/
   color: #333;
   margin-left: 50px;
-  margin-right: 200px; /* Espaçamento entre itens de texto */
+  font-weight: 700;
+  margin-right: 215px; /* Espaçamento entre itens de texto */
 }
 
 .separator {

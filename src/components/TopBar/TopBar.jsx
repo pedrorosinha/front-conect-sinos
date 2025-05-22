@@ -1,4 +1,4 @@
-// src/components/TopBar/TopBar.js
+// src/components/TopBar/TopBar.jsx
 
 import React from "react";
 import styles from "./TopBar.module.css";

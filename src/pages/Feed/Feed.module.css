@@ -37,8 +37,8 @@
 
 /* Popup suspenso */
 .optionsPopup {
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: 30px;
   left: 0;
   background: white;
   border: 1px solid #ccc;
@@ -46,7 +46,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 8px 0;
   z-index: 10;
-  max-width: 20px;
+  width: 200px;
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -78,4 +78,18 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.feedContent {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.postsSection {
+  flex: 1;
+}
+
+.comunidadesWrapper {
+  width: 300px;
 }
