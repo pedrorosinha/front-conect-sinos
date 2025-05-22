@@ -9,10 +9,17 @@ const CreatePost = () => {
   const { addPost } = usePostContext();
 
   const [descricao, setDescricao] = useState("");
+  const [avatar, setAvatar] = useState(null); // <- Novo estado para avatar
 
-  // Verifica se é um post apenas de texto
   const isTextOnly = location.state?.isTextOnly || false;
   const images = location.state?.images || [];
+
+  const handleAvatarChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setAvatar(URL.createObjectURL(file));
+    }
+  };
 
   const handleSubmit = () => {
     if (!isTextOnly && images.length === 0 && !descricao.trim()) {
@@ -24,6 +31,7 @@ const CreatePost = () => {
       autor: "Você",
       conteudo: descricao || "",
       imagens: isTextOnly ? [] : images,
+      avatar: avatar || "/assets/estudantes.jpg", // Se não escolher, usa avatar padrão
     };
 
     addPost(newPost);
@@ -32,14 +40,34 @@ const CreatePost = () => {
 
   return (
     <div className={styles.container}>
-      {/* Visualizador de imagem (só aparece se não for texto puro) */}
+      {/* Avatar Preview e Upload */}
+      <div className={styles.avatarSection}>
+        <label htmlFor="avatarInput" className={styles.avatarUploadLabel}>
+          Escolher avatar
+        </label>
+        <input
+          type="file"
+          id="avatarInput"
+          accept="image/*"
+          onChange={handleAvatarChange}
+          className={styles.avatarInputHidden}
+        />
+        {avatar && (
+          <div className={styles.avatarPreview}>
+            <img src={avatar} alt="Avatar Preview" />
+          </div>
+        )}
+      </div>
+
+
+      {/* Visualizador de imagem */}
       {!isTextOnly && images.length > 0 && (
         <div className={styles.imageViewer}>
           <img src={images[0]} alt="Preview" />
         </div>
       )}
 
-      {/* Campo de texto sempre aparece */}
+      {/* Campo de texto */}
       <textarea
         className={styles.descricao}
         placeholder="Escreva uma descrição..."
