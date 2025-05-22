@@ -45,6 +45,7 @@ const Feed = () => {
               autor={post.autor}
               conteudo={post.conteudo}
               imagens={post.imagens}
+              avatar={post.avatar} // <- Adicionado aqui
             />
           ))}
         </div>

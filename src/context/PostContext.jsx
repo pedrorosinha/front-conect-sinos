@@ -5,8 +5,16 @@ const PostContext = createContext();
 
 export const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([
-    { autor: "João", conteudo: "Primeira postagem no app!" },
-    { autor: "Maria", conteudo: "Curtindo muito esse projeto 😄" },
+    {
+      autor: "João",
+      conteudo: "Primeira postagem no app!",
+      avatar: "/assets/joao-estudante.jpg",
+    },
+    {
+      autor: "Maria",
+      conteudo: "Curtindo muito esse projeto 😄",
+      avatar: "/assets/maria-estudante.jpg",
+    }
   ]);
 
   const addPost = (newPost) => {

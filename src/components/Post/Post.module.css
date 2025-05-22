@@ -23,6 +23,13 @@
   margin-right: 12px;
 }
 
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .content {
   display: flex;
   flex-direction: column;
