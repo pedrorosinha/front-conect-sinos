@@ -11,13 +11,13 @@ const mockComunidades = [
     nome: "Fofoqueiros do B",
     tipo: "Fofoca",
     membros: 120,
-    imagem: "public/assets/comunidades/comunidade_fofoqueiros_b.jpeg",
+    imagem: "assets/comunidades/comunidade_fofoqueiros_b.jpeg",
   },
   {
     nome: "Apoio RS",
     tipo: "Doações",
     membros: 360,
-    imagem: "public/assets/comunidades/comunidade_rs.jpg",
+    imagem: "assets/comunidades/comunidade_rs.jpg",
   },
 ];
 
