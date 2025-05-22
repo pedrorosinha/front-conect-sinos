@@ -5,7 +5,7 @@ const mockComunidades = [
     nome: "Odeio JavaScript",
     tipo: "TI",
     membros: 1240,
-    imagem: "public/assets/comunidades/comunidade_odeio_javascript.png",
+    imagem: "assets/comunidades/comunidade_odeio_javascript.png",
   },
   {
     nome: "Fofoqueiros do B",
